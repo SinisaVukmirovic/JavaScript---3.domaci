@@ -46,3 +46,31 @@ function paliOrNot() {
 		alert("Rec nije palindrom!");
 	}
 }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//2.zadatak bez hackovanja...
+function noHackPali() {
+	var palindrom = prompt("Unesi rec koju zelis da proveris:");
+	var turnToArr = palindrom.split("");
+	var obrni = [];
+	for (i = turnToArr.length - 1; i >= 0; i--) {
+		obrni.push(turnToArr[i]);
+	}
+	console.log(turnToArr);
+	console.log(obrni);
+
+	turnToArr = turnToArr.join("");
+	obrni = obrni.join("");
+
+	console.log(turnToArr);
+	console.log(obrni);
+
+	if (obrni == turnToArr) {
+		console.log("Rec je palindrom!");
+		alert("Rec je palindrom!");
+	}
+	else {
+		console.log("Rec nije palindrom!");
+		alert("Rec nije palindrom!");
+	}
+}
